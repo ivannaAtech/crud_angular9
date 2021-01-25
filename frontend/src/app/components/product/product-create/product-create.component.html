@@ -1,0 +1,87 @@
+<mat-card>
+  <mat-card-title>Novo Produto</mat-card-title>
+  <form>
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="Nome"
+        [(ngModel)]="product.name"
+        name="name"
+      />
+    </mat-form-field>
+
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="Preço (R$)"
+        [(ngModel)]="product.price"
+        name="price"
+      />
+    </mat-form-field>
+
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="Quatidade"
+        [(ngModel)]="product.amount"
+        name="amount"
+      />
+    </mat-form-field>
+
+    <mat-radio-group
+      aria-label="Select an option"
+      [(ngModel)]="product.condition"
+      name="condition"
+    >
+      <p>Selecione a condição do produto</p>
+      <mat-radio-button value="Novo">Novo</mat-radio-button>
+      <mat-radio-button value="Usado">Usado</mat-radio-button>
+    </mat-radio-group>
+    <p></p>
+
+    <mat-form-field>
+      <input
+        matInput
+        [matDatepicker]="picker"
+        placeholder="Data do cadastro"
+        [(ngModel)]="product.created_at"
+        name="created_at"
+      />
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+
+    <mat-card-content>
+      Marque o status do produto
+      <section class="section">
+        <mat-checkbox class="margin" [(ngModel)]="product.status" name="status">
+          Em estoque
+        </mat-checkbox>
+      </section>
+    </mat-card-content>
+
+    <mat-form-field>
+      <mat-label>Ano do modelo</mat-label>
+      <select
+        matNativeControl
+        required
+        [(ngModel)]="product.model_year"
+        name="model_year"
+      >
+        <option value="">Selecione o ano</option>
+        <option value="2015">2015</option>
+        <option value="2016">2016</option>
+        <option value="2017">2017</option>
+        <option value="2018">2018</option>
+        <option value="2019">2019</option>
+        <option value="2020">2020</option>
+        <option value="2021">2021</option>
+      </select>
+    </mat-form-field>
+  </form>
+
+  <button mat-raised-button (click)="createProduct()" color="primary">
+    Salvar
+  </button>
+  <button mat-raised-button (click)="cancel()">Cancelar</button>
+</mat-card>
