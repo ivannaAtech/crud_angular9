@@ -1,0 +1,54 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Caneta BIC Preta",
+      "price": 5.89,
+      "amount": 50,
+      "condition": "novo",
+      "created_at": "12/01/2021",
+      "status": "",
+      "model_year": 2021
+    },
+    {
+      "id": 2,
+      "name": "Lapis Preto",
+      "price": 1.5,
+      "amount": 30,
+      "condition": "novo",
+      "created_at": "12/01/2021",
+      "status": "",
+      "model_year": 2021
+    },
+    {
+      "id": 3,
+      "name": "Notebook Mac Pro",
+      "price": 12000.89,
+      "amount": 5,
+      "condition": "novo",
+      "created_at": "12/01/2021",
+      "status": "em estoque",
+      "model_year": 2021
+    },
+    {
+      "id": 4,
+      "name": "Notebook Acer Aspire E 15",
+      "price": "1539.89",
+      "amount": 5,
+      "condition": "usado",
+      "created_at": "12/01/2021",
+      "status": "em estoque",
+      "model_year": 2018
+    },
+    {
+      "id": 5,
+      "name": "Smartphone Samsung A10",
+      "price": "649.89",
+      "amount": 5,
+      "condition": "usado",
+      "created_at": "12/01/2021",
+      "status": "em estoque",
+      "model_year": 2019
+    }
+  ]
+}
