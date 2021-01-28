@@ -14,3 +14,4 @@ npm install json-server
 npm start
 ```
 
+> Status do Projeto: Em desenvolvimento :warning:
